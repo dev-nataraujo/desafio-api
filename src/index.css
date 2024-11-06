@@ -1,0 +1,203 @@
+/* Paleta de cores:
+#86a1d4 azulzinho
+#413a57 roxo escuro
+#dea8c4 rosinha
+#c1afce roxinho claro;
+*/
+
+/* @media (max-width: 768px) {
+    #produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto {
+        width: 90%;
+    }
+} */
+
+html, body {
+    display: grid;
+    background-color: #efe4eb;
+    width: auto;
+    height: auto;
+    margin: 0;
+    justify-content: center;
+}
+
+.menu {
+    background-color: #413a57;
+    /* background: linear-gradient(to right, #413a57, #dea8c4); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 15px;
+}
+
+.logo {
+    color: #dea8c4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    font-family:'Segoe UI', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#nome-loja {
+    color: #dea8c4;;
+    text-decoration: none;
+}
+
+#logo-img {
+    display: flex;
+    height: auto;
+    width: 65px;
+}
+
+#buscar {
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    border-color: 3px solid #dea8c4;
+    background: #e1d9e7;
+    margin-left: 50px;
+}
+
+#buscar:hover {
+    box-shadow: 0px 1px 3px 0px #c1afce;
+}
+
+#button-buscar {
+    border: 2px solid #dea8c4;
+    border-radius: 14px;
+    background-color: #413a57;
+    color:#dea8c4;
+    height: 35px;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+#button-buscar:hover {
+    color: #413a57;
+    background-color: #dea8c4;
+    box-shadow: 0px 1px 6px 0px #c1afce;
+}
+
+nav a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #dea8c4;
+    font-family: 'Lucida Sans';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hiperlink:hover {
+    color:#c1afceea;
+    padding-block-end: 5px;
+    text-decoration: overline;
+}
+
+#foto-brecho-nat {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+#produtos {
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    gap: 50px;
+    border-left: 1px solid #413a57;
+    border-right: 1px solid #413a57;
+    background-color: #e1d9e7;
+}
+
+.produto {
+    background-color: #c1afce;
+    border: 2px solid #413a57;
+    border-radius: 3px;
+    padding: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 15px;
+    font-family: 'Lucida Sans';
+    font-size: 19px;
+}
+
+.produto:hover {
+    box-shadow: 7px 15px 20px 5px rgba(0,0,0,0.3);
+}
+
+.produto-imagem {
+    width: 100%;
+    height: 360px;
+    object-fit: contain;
+    justify-content: center;
+    border-radius: 15px;
+    padding-bottom: 12px;
+    filter: brightness(1.2); 
+    transition: filter 0.3s ease;
+}
+
+.produto:hover .produto-imagem {
+    overflow: hidden; /* Esconde o excesso da imagem ao aplicar o zoom */
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: 380px; /* Ajuste a altura conforme necessário */
+    /*transform: scale(1.1); Aumenta 10% ao passar o mouse */
+    /* filter: grayscale(100%);  */
+}
+
+.produto h2 {
+    font-family: 'Lucida Sans';
+    font-size: 25px;
+    font-weight: bold;
+    color: #413a57;
+    margin: 0;
+}
+
+.produto p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #413a57;
+    /* margin: 0; */
+}
+
+.button {
+    margin: 3px;
+    border-radius: 3px;
+    background-color: #413a57;
+    color:#dea8c4;
+    font-family:'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.button:hover {
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.3);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #413a57;
+    color: #dea8c4;
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+    font-weight: bold;
+}

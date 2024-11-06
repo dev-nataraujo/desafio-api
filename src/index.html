@@ -4,12 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
+    <title>Loja</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <style type="text/css" id="operaUserStyle"></style> -->
 </head>
 
 <body>
+   
+    <header class="menu">
+    
+        <div class="logo">
+            <img src="logo-api.png" title="logo-img" id="logo-img" alt="logo">
+            <a href="index.html" id="nome-loja">Brechó da Nat</a>
+        </div>
+    
+        <div class="buscar">
+            <input type="string" id="buscar" name="buscar"
+            placeholder="Pesquise seu produto aqui...">
+            <button type="submit" id="button-buscar"><i class="fa fa-search"></i></button>
+        </div>
+    
+        <nav>
+            <a href="index.html" class="hiperlink">Início</a>
+            <a href="sobrenos.html" class="hiperlink">Sobre nós</a>
+            <a href="contato.html" class="hiperlink">Contato</a>
+        </nav>
+    
+    </header>
+    
+    <section>
+        <img src="foto-brecho.png" tittle="brecho-nat" id="foto-brecho-nat" alt="foto-brecho-nat">
+    </section>
+
+    <section class="produtos-container">
+        <div id="produtos"></div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Brechó da Nat Virtual. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="./index.js"></script> <!-- Conectado ao arquivo index.js -->
+
 </body>
 
 </html>
